@@ -1,0 +1,39 @@
+.game {
+  .game-header {
+    h1, p {
+      display: inline-block; 
+      padding: 0px 20px;
+    }
+  }
+
+  .help-message {
+    text-align: right; 
+  }
+
+	td {
+    width: 120px;  
+    height: 120px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 110px;
+    border: 5px solid brown;
+  }
+
+  .game-container {
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .scores {
+    padding: 0px 10px;
+    .scores-list {
+      border: 2px solid brown;
+      height: 480px;
+      overflow-y: scroll; 
+      margin: 10px;
+    }
+  }
+}

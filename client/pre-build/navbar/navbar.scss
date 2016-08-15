@@ -1,0 +1,15 @@
+.navbar {
+	border-radius: 0;
+}
+
+.logo {
+	display: block;
+	margin-right: 7px;
+  	margin-top: 8px;
+  	width: 35px;
+
+  	@media (max-width: 768px) {
+		margin-left: 15px;
+  	}
+}
+

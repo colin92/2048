@@ -1,0 +1,25 @@
+<section class="game">
+  <div class="game-header">
+    <h1>2048 Game</h1>
+    <p>
+      <button ng-click="saveGame()">Save</button>
+      <button ng-click="loadGame()">Load</button>
+    </p>
+  </div>
+	<p class="help-message">Press "?" for help</p>
+
+  <h2 ng-show="game.over">{{ game.won ? "Congratulations! You've reached 2048" : "Game Over, please try again"}}</h2>
+  <div class="game-container">
+    <table>
+      <tr ng-repeat="row in game.getBoard()">
+        <td ng-repeat="cell in row track by $index">{{ cell === 0 ? '' : cell }}</td>
+      </tr>
+    </table>
+    <div class="scores">
+      <h2>Highscores</h2> 
+      <ol class="scores-list">
+        <li ng-repeat="score in scores | orderBy:'-score'"><h4>{{ score.score }}</h4></li>
+      </ol>
+    </div>
+  </div>
+</section>
