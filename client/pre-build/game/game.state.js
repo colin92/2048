@@ -1,6 +1,6 @@
 app.config(function ($stateProvider) {
     $stateProvider.state('game', {
-        url: '/game',
+        url: '/',
         templateUrl: '/pre-build/game/game.html',
         controller: 'GameController',
         resolve: {
